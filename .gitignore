@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Anomaly map: only share heatmaps / scores; anything with original images stays local
+data/
+results/**
+!results/**/
+!results/**/scores.csv
+!results/**/*_heatmap.png
+!results/summary.csv
+!results/strength_curve.png
